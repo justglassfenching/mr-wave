@@ -19,8 +19,8 @@
     <script src="assets\js\justglassfencing.min.js"></script>
     <nav class="navbar navbar-color-on-scroll fixed-top navbar-transparent navbar-expand-lg">        
       <div class="container">
+	
         <div class="navbar-translate">
-          <a class="navbar-brand" href="">Home</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
               </a>
             </li> -->
 			<li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="#contact" class="nav-link">
                 <i class="material-icons">person_login</i> contact us
               </a>
             </li>
@@ -205,7 +205,8 @@
       
 	  <div class="container">
 	  <br/ ><br/ >
-	  	<hr>
+	  <hr>	  
+	  <a name="contact"></a>
 	  <h2 class="title text-center">Contact Us</h2>
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -215,27 +216,27 @@
                         </p>
 					</div>
 				</div>
-                
+					
                 <div class="row">
                     <div class="col-md-6">
                    
-                        <form role="form" id="contact-form" method="post">
+                        <form role="form" id="contact-form" action="https://formspree.io/mzbgpjng" method="POST">						    
                             <div class="form-group">
                                 <label for="name" class="bmd-label-floating">Your name</label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="contact_name" name="contact_name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmails" class="bmd-label-floating">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmails">
+                                <input type="email" class="form-control" id="contact_email" name="contact_email">
                                 <span class="bmd-help">We'll never share your email with anyone else.</span>
                             </div>
                             <div class="form-group">
                                 <label for="phone" class="bmd-label-floating">Phone</label>
-                                <input type="text" class="form-control" id="phone">
+                                <input type="text" class="form-control" id="contact_phone" name="contact_phone">
                             </div>
                             <div class="form-group label-floating">
                                 <label class="form-control-label bmd-label-floating" for="message"> Your message</label>
-                                <textarea class="form-control" rows="6" id="message"></textarea>
+                                <textarea class="form-control" rows="6" id="message" name="message"></textarea>
                             </div>
                             <div class="submit text-right">
                                 <input type="submit" class="btn btn-primary btn-raised" value="Send Message">
@@ -251,7 +252,6 @@
                                 <h4 class="info-title">Give us a ring</h4>
                                 <p> 
                                     <br> +61 422 830 115
-                                    <br> Mon - Fri, 8:00-17:00
                                 </p>
                             </div>
                         </div>
